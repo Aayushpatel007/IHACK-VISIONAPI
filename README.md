@@ -16,3 +16,17 @@ public class Constants {
     public static final String APPLICATION_NAME = "NAME-OF-APPLICATION";
 
 }
+```
+<table>
+<tr>
+
+<th><img src="https://github.com/Aayushpatel007/IHACK-VISIONAPI/blob/master/out2.jpeg" width="670" height="540"></th>
+</tr>
+<table>
+
+<table>
+<tr>
+<th><img src="https://github.com/Aayushpatel007/IHACK-VISIONAPI/blob/master/out1.jpeg" width="670" height="540"></th>
+
+</tr>
+<table>
