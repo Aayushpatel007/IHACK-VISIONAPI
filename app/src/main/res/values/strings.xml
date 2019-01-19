@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Image recognition</string>
+    <string name="menu_tab_camera">Camera</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="face_data_expression">... seems to be %s</string>
+    <string name="happy">happy</string>
+    <string name="sad">sad</string>
+    <string name="angry">angry</string>
+    <string name="surprised">surprised</string>
+    <string name="face_data_expression_not_detected">... has no detected expression.</string>
+    <string name="no_camera_permission">No permission to use camera</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="no_response">Unable to fetch result from Google Vision API</string>
+    <string name="tts_reset">Canceled, reseting camera.</string>
+    <string name="tts_processing_image">Processing image, please wait.</string>
+</resources>

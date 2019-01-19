@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"/>
+
+    <RelativeLayout
+        android:id="@+id/processing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#65000000"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:id="@+id/score_result_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/reset_button_shape"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="@string/reset"
+            android:alpha="1"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bb000000"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:alpha="1">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:text="Processing image"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:title=""
+        android:background="#00000000" />
+
+</FrameLayout>
